@@ -29,7 +29,7 @@ enum clock {
 
 /**
  * struct ge
- * @rS0: the S0 register is the main sequencer of the processor. It is loaded by
+ * @rSO: the S0 register is the main sequencer of the processor. It is loaded by
  * th eoutputs of the logic network of the future status (SU00 - SU07).It drives
  * the NA knot when the cycle has been attributedd to CPU or channel 1 (p. 126).
  */
@@ -37,7 +37,7 @@ struct ge {
     enum clock current_clock;
     uint8_t mem[MEM_SIZE];
     uint64_t ticks;
-    uint8_t rS0;
+    uint8_t rSO;
     /* ge state here */
 };
 
